@@ -14,3 +14,6 @@ The dictionaly of unique symbols consists of 21 elements (`data/Dictionary`):
 Once models are trained, `ae_sampler.py` can be used to compare input molecules vs output ones.
 
 `ae_smiles2emb.py` and `ae_emb2smiles.py` are used to convert SMILES strings to embeddings and vice versa.
+
+A principal architecture of the Autoencoder is shown in the figure below. The upper chart presents the Encoder: connections between layers are indicated by black arrows with BatchNorm and activation functions denoted. Each convolution layer is characterized by number of output channels, kernel sizes (height -- h, width -- w). Solid blue frames indicate the neural layers, the dashed blue frames -- input and output vectors. The bottom chart shows the Decoder scheme with the same notation and color conventions.
+![Autoencoder](AutoEncoder_Coagulants.png)
